@@ -1,0 +1,19 @@
+﻿<div class="oc-component" name="${cmpName}" type="${cmpType}">
+<div class="component-input">
+<table>
+<tr>
+<div>
+<td>标题:</td>
+<td><input type="text" class="component-value form-editor" name="textTitle" value="${data.textTitle}" /></td>
+</div>
+</tr>
+<tr>
+<div>
+<td>正文:</td>
+<td><textarea  class="component-value" name="textContent" >${data.textContent}</textarea></td>
+</div>
+</tr>
+</table>
+</div>
+<div><input type="button" class="component-save button white" value="确定" /></div>
+</div>    

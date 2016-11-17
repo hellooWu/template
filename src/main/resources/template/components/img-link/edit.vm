@@ -1,0 +1,15 @@
+﻿<div class="oc-component" name="${cmpName}" type="${cmpType}">
+<div class="component-input">
+<div class="file-box" style="height:30px;"> 
+<input type='text' name='textfield' id='textfield' class='txt' /> 
+<input type='button' class='btn' value='浏览...' /> 
+<input type="file" class="shareFile file" name="shareFile" onchange="document.getElementById('textfield').value=this.value"/>
+</div>
+<input type="button" name="postShare" class="postShare btn" value="上传图片" style="width:auto;"/>
+<a id="pre_link" target="_blank"><img id="pre_display" src="${data.picUrl}" style="max-height:50px;"/></a>
+<input type="hidden" class="component-value picUrl" name="picUrl" value="${data.picUrl}" />
+
+<div style="margin-top:5px;margin-bottom:5px;">图片链接:<input type="text" class="component-value form-editor" name="link" value="${data.link}" /></div>
+<div><input type="button" class="component-save btn" value="确定" /></div>
+</div>
+</div>

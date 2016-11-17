@@ -1,0 +1,30 @@
+.remove {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 35px;
+	width: 35px;
+	display: none;
+}
+
+.add {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 35px;
+	width: 35px;
+	display: none;
+}
+
+
+.bro {
+	width: 100%;
+}
+
+.imgFa {
+	position: relative;
+}
+
+.active {
+	border: 3px #B4CDCD solid;
+}

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>${title}</title>
+		<link href='/template/styles/pages/picWord.css' rel='stylesheet' type='text/css'>
+		  ${scripts}
+		  <script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "//hm.baidu.com/hm.js?7b29013fcc1cbcea5fc7397827de9011";
+					var s = document.getElementsByTagName("script")[0]; 
+					s.parentNode.insertBefore(hm, s);
+				})();
+				var STARTTIME = new Date().getTime();
+		  </script>
+		  <style>body{padding:0px;margin:0px;color:#333;}</style>
+		  <link href='/template/styles/pages/common.css' rel='stylesheet' type='text/css'/>
+		  ${styles}
+    </head> 
+    <body>
+		${hidden-input}
+        <div class="wrapper" id="wrapper">
+                #foreach($data in $component-vals.entrySet())
+				#if(${data.value.link})
+				<div name="$data.key" type="img-link" class="bigdsp oc-component img-link imgFa">
+					<a href="${data.value.link}" target="_blank" class="bro component-value" name="link" value="${data.value.link}">
+						<img src="${data.value.picUrl}" width="100%" class="component-value" name="picUrl" value="${data.value.picUrl}"/>
+					</a>
+				</div>
+				#elseif(${data.value.textTitle})
+				<div name="${data.key}" type="text-link" class="bigdsp oc-component text-link imgFa">
+					<div class="bro">
+						<h4 class="text-center header-text component-value" name="textTitle" value="${data.value.textTitle}">${data.value.textTitle}</h4>
+						<p class="text-center component-value" name="textContent" value="${data.value.textContent}">${data.value.textContent}</p>
+					</div>
+				</div>
+				#end
+				#end				
+        </div>  
+    </body>
+</html>
