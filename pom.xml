@@ -344,6 +344,24 @@
 
   </dependencies>
 		
-		
+<build>
+    <finalName>template</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <charset>UTF-8</charset>
+          <url>http://112.74.165.23/manager/text</url>
+          <username>wujialong</username>
+          <password>wjl941114.</password>
+          <path>/template</path>
+          <port>80</port>
+        </configuration>
+      </plugin>
+      </plugins>
+</build>		
 
 </project>
