@@ -98,7 +98,7 @@ public class TemplateController {
 
 		Model model = new ExtendedModelMap();
 		model.addAttribute("allTemplate", allTemplate);
-		model.addAttribute("url", "http://localhost:8090/template/resources" + uri + "/" + fname);
+		model.addAttribute("url", "http://112.74.165.23/template/resources" + uri + "/" + fname);
 		model.addAttribute("page", page);
 		return new ModelAndView("ueditor", model.asMap());
 	}
@@ -361,7 +361,7 @@ public class TemplateController {
 
 		Model model = new ExtendedModelMap();
 		model.addAttribute("allTemplate", allTemplate);
-		model.addAttribute("url", "http://localhost:8090/template/resources" + uri + "/" + fname);
+		model.addAttribute("url", "http://112.74.165.23/template/resources" + uri + "/" + fname);
 		model.addAttribute("page", page);
 		return new ModelAndView("newpage", model.asMap());
 	}
@@ -449,7 +449,7 @@ public class TemplateController {
 			return null;
 		}
 
-		String urlPath = "http://localhost:8090/template/images";
+		String urlPath = "/template/images";
 		String localPath = request.getSession().getServletContext().getRealPath("images");
 
 		// 创建新目录,按日期分类(年月日)

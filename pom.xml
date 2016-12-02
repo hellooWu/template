@@ -357,6 +357,7 @@
           <url>http://112.74.165.23/manager/text</url>
           <username>wujialong</username>
           <password>wjl941114.</password>
+          <update>true</update>
           <path>/template</path>
           <port>80</port>
         </configuration>

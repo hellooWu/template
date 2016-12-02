@@ -47,7 +47,7 @@ select {
       cursor: pointer;
       /*My custom style for fonts*/
       color: #1455a2;
-      padding: 0 0 0 250px;
+      padding: 0 0 0 18%;
 }
 
 #add_sel{
